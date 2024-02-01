@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Project</title>
+    <!-- Google font lint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8cf876dd67.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Basic example of collapsible menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Bootstrap</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collaps"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="header">
+      <div class="overlay">
+        <div class="container">
+          <div class="row text-center">
+            <div class="column">
+              <h1 style="margin-top: 200px" class="display-4">
+                Bootstrap Responsive Web Pages
+              </h1>
+              <p>Text is here for a placeholder</p>
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                name="button"
+              >
+                Action
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Section -->
+    <!-- pt-5 is padding-top 5 -->
+    <section id="feature" class="pt-5">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4 text-center">
+            <i class="fa-solid fa-person fa-4x"></i>
+            <h3 class="mt-3">Easy Learning</h3>
+            <p>Hello world</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fa-solid fa-rocket fa-4x"></i>
+            <h3 class="mt-3">Innovative Technology</h3>
+            <p>Hello world</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fa-solid fa-comment-dots fa-4x"></i>
+            <h3 class="mt-3">Free Support</h3>
+            <p>Hello world</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Our Work</h3>
+            <p class="text-muted">
+              Helloo wolrd we are working to change things for the better.Helloo
+              wolrd we are working to change things for the better.
+            </p>
+          </div>
+          <div class="col-md-6 text-center mx-auto">
+            <!-- <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Open
+            </button> -->
+            <a
+              href="#"
+              class="video"
+              data-bs-video="images/test.mp4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="fas fa-play fa-3x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Connects to the open button data-target -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <iframe src="images/test.mp4" width="100%" height="400"></iframe>
+          </div>
+        </div>
+      <!-- Example of basic dialog popup, matches with commented out button above -->
+      <!-- <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal Body Content</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>

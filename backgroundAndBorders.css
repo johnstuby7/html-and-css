@@ -1,0 +1,9 @@
+h1 {
+  background: rgb(255, 80, 80);
+  border: 2px dashed blue;
+}
+
+body {
+  background: green;
+  background-size: cover;
+}

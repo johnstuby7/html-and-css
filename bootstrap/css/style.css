@@ -1,0 +1,80 @@
+/* General Changes */
+h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.body {
+  font-family: "Roboto" sans-serif;
+}
+
+.navbar {
+  border-bottom: #e600e6 solid 2px;
+}
+
+/* This will make changes to the .navbar-brand for the navbar.  */
+.navbar .navbar-brand {
+  color: #990099 !important;
+  font-size: 24px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+/* This causes the color for the nav-link to change when hovering over the links */
+.nav-link:hover {
+  color: #990099 !important;
+}
+
+#header {
+  background: url("../images/header-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#header .overlay {
+  background-color: rgba(26, 0, 26, 0.4);
+  height: 100vh;
+}
+
+.btn-outline-secondary {
+  cursor: pointer;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #990099;
+}
+
+/* font awesome css */
+#features .fa {
+  font-size: 40px;
+}
+
+/* Feature Section */
+/* Changes color of icons and add hover to h3 */
+#features i {
+  color: #990099;
+  cursor: pointer;
+}
+
+#features h3:hover {
+  color: #990099;
+}
+
+/* work section */
+#work {
+  background: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#work i {
+  color: #990099;
+}
