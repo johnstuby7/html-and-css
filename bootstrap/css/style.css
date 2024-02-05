@@ -78,3 +78,21 @@ h1 {
 #work i {
   color: #990099;
 }
+
+#history {
+  background-color: #f0f0f5;
+}
+
+.historyArea {
+  background-color: white;
+  height: 450px;
+  margin-right: -50px;
+  padding: 30px;
+}
+
+.historyImage {
+  margin-top: 90px;
+  margin-left: -10px;
+  z-index: 50;
+  position: relative;
+}
