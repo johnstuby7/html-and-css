@@ -43,3 +43,8 @@
 - ui-patterns.com This is a good website for examples of UI
 - Fro screen resizing you need to include each of the maximum screen size you want to use, so for example a class tied to a column might look like this: class="col-lg-3 col-md-4 col-sm-6" which dictates the maximum items that can be displayed on the screen: so for small screens its 3 large columns
 - adding !important to a css, the changes will have priority over anything else.
+
+### Bootstrap Carousel:
+
+- Go to bootstrap.com and look at carousel examples
+-
