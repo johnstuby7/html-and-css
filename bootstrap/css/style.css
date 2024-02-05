@@ -184,10 +184,20 @@ h1 {
   #header {
     background-size: 1200px 100vh;
   }
+  .historyImage {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width 576px) {
   #header {
     background-size: 1200px 100vh;
+  }
+  .historyImage {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
   }
 }
