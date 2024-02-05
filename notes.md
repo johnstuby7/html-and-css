@@ -48,3 +48,11 @@
 
 - Go to bootstrap.com and look at carousel examples
 -
+
+# Javascript
+
+- html is responsible for all content (image, button, div)
+- css is responsible for the presentation, styling and placement of the content prepared with html to the desired position on the screen
+- javascript: is responsible for the interaction between the user and the web site
+
+- Two ways to use javascript: you an either use inline script like <script></script> or import a external javascript file
