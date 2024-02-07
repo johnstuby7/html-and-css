@@ -91,3 +91,20 @@ if (age < 18) {
 } else {
   console.log("You can Drink");
 }
+
+// Ternary operator:
+// Essentially a different way of doing a if/else statement
+var grade = 42;
+
+grade < 45
+  ? console.log("you can not go to class")
+  : console.log("you Can go to class");
+
+var result = grade < 45 ? "failure" : "Success";
+console.log(result);
+
+if (grade < 45) {
+  result = "failure";
+} else {
+  result = "success";
+}
