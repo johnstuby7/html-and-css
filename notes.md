@@ -56,3 +56,23 @@
 - javascript: is responsible for the interaction between the user and the web site
 
 - Two ways to use javascript: you an either use inline script like <script></script> or import a external javascript file
+- Variable: A container to store a value so we can reuse it easily
+- Data types:
+
+  - String: used for text, used between 'hello'
+  - Number: Integers, Decimal Numbers, Percentages
+  - Boolean: True or False
+  - Undefined: Data type of a variable that does not yet have a value
+  - Null: Nonexistant
+
+- Variables can start with a letter, \_ or $ but not other symbols
+
+- Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers).
+
+  - so if you have 20 == '20' it will ignore the ''
+
+<!-- Logical Operators -->
+
+- && both sides need to evaluate to true
+- || either side needs to be true
+- ! will return opposite of result so if !(false) it will return true
