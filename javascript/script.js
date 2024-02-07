@@ -64,3 +64,30 @@ var b = 9;
 // Shows how to use && !! and !
 var c = a > b || !(b != "9" && a == "15");
 console.log(c);
+
+// Conditional Statements
+// If Statement
+var grade;
+grade = 20;
+
+if (grade < 40) {
+  console.log("You cant go to next calss");
+} else if (grade > 40 && grade < 45) {
+  console.log("No next class for you, take a class to help");
+} else {
+  console.log("You can go to the next class");
+}
+
+// If a person is under 18, then he/ she cannot enter
+// if they are between 18 but under 23 then they can enter but not drink
+// older then 23 they can drink
+var age;
+age = 25;
+
+if (age < 18) {
+  console.log("You cant drink here, or come in");
+} else if (age < 23) {
+  console.log("You can enter, but no drinking");
+} else {
+  console.log("You can Drink");
+}
