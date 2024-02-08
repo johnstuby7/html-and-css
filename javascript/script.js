@@ -464,3 +464,11 @@ console.log(cats);
 // shift method removes item from begining of array
 cats.shift();
 console.log(cats);
+
+// IndexOf takes a argument and trys to find it in a array
+console.log(cats.indexOf("mittens"));
+
+//  Slice takes the index of values in a array and will return those specific items
+var friends = ["timmy", "fred", "calib", "johny"];
+var closeFriends = friends.slice(1, 3);
+console.log(closeFriends);
