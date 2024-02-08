@@ -227,8 +227,43 @@ for (var i = 1; i < 10; i++) {
 // Check the numbers from 1 to 10 and just print the first numbesr that can be divided by 2 on the console
 console.log("break statement");
 for (var i = 1; i < 10; i++) {
-  if (i2 % 2 === 0) {
+  if (i % 2 === 0) {
     console.log(i);
     break;
   }
 }
+
+// Functions:
+// Reusable chunks of code
+function sayHello() {
+  console.log("hello World 55");
+}
+
+sayHello();
+
+function doSomething() {
+  console.log("Hello");
+  console.log("Goodbye");
+  console.log("Idiot");
+}
+doSomething();
+doSomething();
+
+// Function with Arguments:
+function sayHi(name) {
+  console.log("Hi", +" " + name);
+}
+
+sayHi("John");
+
+function cube(number) {
+  console.log(number * number * number);
+}
+cube(3);
+cube(16);
+
+function bmi(length, weight) {
+  console.log(weight / (length * length));
+}
+
+bmi(1.8, 85);
