@@ -397,17 +397,17 @@ saySentence();
 console.log(sentence);
 
 // example of function scope that wont work, second example doesn't have access to myX variable
-function writeNumber() {
-  var myX = 30;
-  console.log(myX);
-}
+// function writeNumber() {
+//   var myX = 30;
+//   console.log(myX);
+// }
 
-function doSomething() {
-  console.log(myX);
-}
+// function doSomething() {
+//   console.log(myX);
+// }
 
-writeNumber();
-doSomething();
+// writeNumber();
+// doSomething();
 
 // Arrays
 var student1 = "claire";
@@ -441,3 +441,26 @@ commonData[1];
 var test = ["ji", "hello", "goodbye"];
 var test_length = test.length;
 console.log(test_length);
+
+// Array Methods:
+var dogs = [];
+
+var tests = ["ji", "hello", "goodbye"];
+tests[3] = "newest";
+
+// Push metho adds a new item to the end of the array
+tests.push("dogs");
+console.log(tests);
+
+// pop method removes the last item from the end of the array
+tests.pop();
+console.log(tests);
+
+// unshift adds new item to the beginning of a array
+var cats = ["cat1", "mittens", "tiger"];
+cats.unshift("cat4");
+console.log(cats);
+
+// shift method removes item from begining of array
+cats.shift();
+console.log(cats);
