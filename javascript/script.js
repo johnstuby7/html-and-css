@@ -493,3 +493,39 @@ var films = [
 
 // returns the last element of the array, then returns the last element of the selected array
 console.log(films[2][2]);
+
+// Array Iteration:
+var bookList = ["harry potter", "the hobbit", "hunger games", "little prince"];
+
+for (var i = 0; i < bookList.length; i++) {
+  console.log(bookList[i]);
+}
+
+// Prints to the console for each element in the array, so will have 4 prints containing the entire array
+bookList.forEach(function () {
+  console.log(bookList);
+});
+
+// Array iteration test:
+/*
+1. create a array which indludes numbers between 0 and 20 by using the push method
+
+2. by using this array you created in first question, you will print the numbers that can be divided by 5
+to the console using the foreach method
+*/
+
+var numberArray = [];
+
+for (var i = 1; i <= 20; i++) {
+  numberArray.push(i);
+}
+
+console.log(numberArray);
+
+numberArray.forEach(function (number) {
+  if (number % 5 === 0) {
+    console.log(number);
+  }
+});
+
+// Javascript Objects
