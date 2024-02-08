@@ -408,3 +408,36 @@ function doSomething() {
 
 writeNumber();
 doSomething();
+
+// Arrays
+var student1 = "claire";
+var student2 = "john";
+var student3 = "steven";
+var student4 = "Bob";
+var student5 = "Robert";
+
+// Each element has a index, starting at 0 with claire and ending at 4 with veronica
+var students = ["claire", "john", "Dan", "Hope", "veronica"];
+
+console.log(students);
+console.log(students[2]);
+
+// TO update a array value:
+students[0] = "joseph";
+console.log(students);
+
+// adding a new student to the array
+students[6] = "Kenny";
+console.log(students);
+
+// Different ways of setting up a array of values
+var cats = [];
+var cats = new Array();
+
+// arrays can hold a variety of data types at once
+var commonData = ["john", 25, true, null];
+commonData[1];
+
+var test = ["ji", "hello", "goodbye"];
+var test_length = test.length;
+console.log(test_length);
