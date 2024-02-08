@@ -349,3 +349,62 @@ function addition(number) {
 
 var AddResult = addition(3);
 console.log(AddResult);
+
+// Function Scope
+
+function sayName() {
+  var Name = "john";
+  console.log(name);
+}
+
+var Name = "john";
+console.log(Name);
+sayName();
+
+var Count = 18;
+console.log(Count);
+
+// defining something outside of a function, means that we still need to call it inside of the function for it to have access to that var
+function writeCount() {
+  console.log(Count);
+}
+
+// cant reach from child scope to parent scope.
+
+// Nested function example:
+// able to access the child scope of saybye by calling sayHi, could assign it to a variable and access it from outside
+function sayNew() {
+  var myWord = "hi there";
+  console.log(myWord);
+  sayBye();
+
+  function sayBye() {
+    console.log(myWord);
+  }
+}
+
+sayNew();
+
+// Example of different scopes, by defining var sentence both outside and inside, they both have different scopes,so they
+// can have different values, thats why both values get printed
+var sentence = "Hello World";
+function saySentence() {
+  var sentence = "bye bye";
+  console.log(sentence);
+}
+
+saySentence();
+console.log(sentence);
+
+// example of function scope that wont work, second example doesn't have access to myX variable
+function writeNumber() {
+  var myX = 30;
+  console.log(myX);
+}
+
+function doSomething() {
+  console.log(myX);
+}
+
+writeNumber();
+doSomething();
