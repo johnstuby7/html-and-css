@@ -80,3 +80,23 @@
 ## ternary operator:
 
 - The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.
+
+## Switch Statmeent:
+
+- To get a switch statment to use a range of values, have the switch(true) then have your conditionals:
+
+```
+var grade = 42;
+//  example of switch statement with ranges
+switch (true) {
+  case grade < 40:
+    console.log("cant go to next class");
+    break;
+  case grade >= 40 && grade < 45:
+    console.log("No next class for you, take a class to help");
+    break;
+  default:
+    console.log("You can go to next class");
+    break;
+}
+```

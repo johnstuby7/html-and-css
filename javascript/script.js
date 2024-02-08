@@ -108,3 +108,50 @@ if (grade < 45) {
 } else {
   result = "success";
 }
+
+// Switch Statements
+var day;
+day = "monday";
+switch (day) {
+  case "saturday":
+    console.log("i like saturday");
+    break;
+  case "monday":
+    console.log("i do not like monday");
+    break;
+  case "friday":
+    console.log("TGIF");
+    break;
+  default:
+    console.log("What day is it?");
+    break;
+}
+
+var grade = 42;
+//  example of switch statement with ranges
+switch (true) {
+  case grade < 40:
+    console.log("cant go to next class");
+    break;
+  case grade >= 40 && grade < 45:
+    console.log("No next class for you, take a class to help");
+    break;
+  default:
+    console.log("You can go to next class");
+    break;
+}
+
+var alex = (90 + 80 + 95) / 3;
+var sara = (89 + 76 + 98) / 3;
+var nancy = (42 + 98 + 83) / 3;
+
+console.log(alexAverage, saraAverage, nancyAverage);
+if (alex > sara && alex > nancy) {
+  console.log("ALex has the highest score");
+} else if (sara > alex && sara > nancy) {
+  console.log("sara has the highest score");
+} else if (nancy > alex && nancy > sara) {
+  console.log("nancy has the highest score");
+} else {
+  console.log("Maybe there was a match");
+}
