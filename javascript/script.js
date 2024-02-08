@@ -145,7 +145,7 @@ var alex = (90 + 80 + 95) / 3;
 var sara = (89 + 76 + 98) / 3;
 var nancy = (42 + 98 + 83) / 3;
 
-console.log(alexAverage, saraAverage, nancyAverage);
+console.log(alex, sara, nancy);
 if (alex > sara && alex > nancy) {
   console.log("ALex has the highest score");
 } else if (sara > alex && sara > nancy) {
@@ -154,4 +154,40 @@ if (alex > sara && alex > nancy) {
   console.log("nancy has the highest score");
 } else {
   console.log("Maybe there was a match");
+}
+
+// Loop examples:
+// Print numbers from 1 to 10 on the console
+// DRY DO NOT REPEAT YOURSELF
+var number = 15;
+
+while (number < 50) {
+  console.log(number);
+  number++;
+}
+
+// print even numbers from 132 to 148 on the console
+// print numbers between 25 and 100 divisible by 7 on the console
+var number = 132;
+while (number < 148) {
+  console.log(number);
+  number += 2;
+}
+
+var number = 132;
+while (number <= 148) {
+  if (number % 2 === 0) {
+    console.log("divisible by 2");
+    console.log(number);
+  }
+  number++;
+}
+
+var number = 25;
+while (number <= 100) {
+  if (number % 7 === 0) {
+    console.log("DIvisible by 7");
+    console.log(number);
+  }
+  number++;
 }
