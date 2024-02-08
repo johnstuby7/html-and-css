@@ -267,3 +267,85 @@ function bmi(length, weight) {
 }
 
 bmi(1.8, 85);
+
+// Return Statements
+function cube(number) {
+  if (number === 25) {
+    return 25;
+  }
+  return number * number * number;
+}
+
+var num = cube(25);
+console.log("this is num variable" + " " + num);
+
+function calculateAge(birthYear) {
+  return 2020 - birthYear;
+}
+
+var age = calculateAge(1992);
+console.log(age);
+
+function enterCafe(Age) {
+  if (Age < 18) {
+    return " You can not enter cafe";
+  }
+  return "you can enter cafe";
+}
+
+var cafe = enterCafe(17);
+console.log(cafe);
+
+// Function Decloration
+function calculateAge(birthYear) {
+  return 2024 - birthYear;
+}
+
+// Function Expression
+var calculateAges = function (birthYear) {
+  return 2024 - birthYear;
+};
+
+var age = calculateAges(1981);
+console.log(age);
+
+// Function Quiz
+/*
+1. Create a function called subtraction, this function takes two arguments, X and Y then subtracts one of these arguments
+from the other and returns the result and prints it to console.
+
+2. Declare a function called isOdd, this function takes one argument and it is going to check if the argument is a 
+odd number, then return a boolean and console that
+
+3.Declare a  function called addition, it takes one argument then it needs to sum up all numbers from 1 to that arugment
+and return the total value . print to console
+*/
+
+function subtraction(x, y) {
+  return y - x;
+}
+
+var result = subtraction(19, 97);
+console.log(result);
+
+function isOdd(number) {
+  if (number % 2 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var newResult = isOdd(15);
+console.log(newResult);
+
+function addition(number) {
+  var res = 0;
+  for (var i = 1; i <= number; i++) {
+    res = res + i;
+  }
+  return res;
+}
+
+var AddResult = addition(3);
+console.log(AddResult);
