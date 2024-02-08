@@ -191,3 +191,27 @@ while (number <= 100) {
   }
   number++;
 }
+
+// For Loop
+// for(init; condition; step)
+//  If the condition is correct, the code will run
+for (var number = 1; number < 11; number++) {
+  console.log(number);
+}
+
+// Print odd numbers from 132 to 148 on the console
+
+for (var i = 132; i < 148; i++) {
+  // If the result of i %2 isnt zero, then print result
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+//  print numbers between 25 and 100, divisible by both 7 and 5 to the console.
+for (var i = 25; i < 100; i++) {
+  // If the result of i %7 or i % 5 is zero, then print result
+  if (i % 7 === 0 && i % 5 === 0) {
+    console.log(i);
+  }
+}
