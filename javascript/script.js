@@ -472,3 +472,24 @@ console.log(cats.indexOf("mittens"));
 var friends = ["timmy", "fred", "calib", "johny"];
 var closeFriends = friends.slice(1, 3);
 console.log(closeFriends);
+
+/*
+Array Quiz
+Var books = ['harry potter', 'the hobbit', 'hunger games', 'little prince']
+1. access the last element of the books array using the length of the array  and print it ot the console
+
+var films = ['hobbit', 'hobbit2', 'hobbit3', 'lotr1', 'lotr2', 'lotr3', 'godfather1', 'godfather2', 'godfather3']
+2. print the godfather3 film from the films array to the console
+*/
+
+var books = ["harry potter", "the hobbit", "hunger games", "little prince"];
+console.log(books[books.length - 1]);
+
+var films = [
+  ["hobbit", "hobbit2", "hobbit3"],
+  ["lotr1", "lotr2", "lotr3"],
+  ["godfather1", "godfather2", "godfather3"],
+];
+
+// returns the last element of the array, then returns the last element of the selected array
+console.log(films[2][2]);
