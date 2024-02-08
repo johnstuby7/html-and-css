@@ -215,3 +215,20 @@ for (var i = 25; i < 100; i++) {
     console.log(i);
   }
 }
+
+// CONTINUE AND BREAK
+// Check the numbers from 1 to 10 and just print the numbers that can be divided by 2 on the console
+// Continue cleans up the code slightly from above examples
+
+for (var i = 1; i < 10; i++) {
+  if (i % 2 !== 0) continue;
+  console.log(i);
+}
+// Check the numbers from 1 to 10 and just print the first numbesr that can be divided by 2 on the console
+console.log("break statement");
+for (var i = 1; i < 10; i++) {
+  if (i2 % 2 === 0) {
+    console.log(i);
+    break;
+  }
+}
