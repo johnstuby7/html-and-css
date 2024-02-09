@@ -540,7 +540,42 @@ var emoKids = {
   age: 44,
   school: "SAIT",
 };
+
 // How to get a certain value from the array
 // cant use . notation if the value has a space in the name
 console.log(emoKids["name"]);
 console.log(emoKids.school);
+
+// Updating a array
+var leonard = {
+  name: "leonard",
+  school: "calTech",
+  age: 35,
+};
+
+// will add 1 to leonards age
+leonard.age += 1;
+
+console.log(leonard);
+
+leonard["school"] = "MIT";
+console.log(leonard["school"]);
+
+// you can store arrays and objects inside of a object
+var student11 = {
+  name: "amy",
+  age: 25,
+  friends: ["Helga", "stephanie"],
+  bestFriends: {
+    firstName: "penny",
+    birthYear: 1988,
+  },
+};
+
+// how to retrieve the name of the nested object
+var bestFriendOfStudent11 = student11.bestFriends.firstName;
+console.log(bestFriendOfStudent11);
+
+// how to retrieve information from a nested array
+var friend2 = student11.friends[2];
+console.log(friend2);
