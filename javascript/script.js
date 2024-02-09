@@ -579,3 +579,76 @@ console.log(bestFriendOfStudent11);
 // how to retrieve information from a nested array
 var friend2 = student11.friends[2];
 console.log(friend2);
+
+// HOW TO ADD PROPERTY TO OBJECTS
+var colors = {};
+
+colors.orange = { code: 123 };
+console.log(colors.orange.code);
+
+// to retrieve a specific index for the codes for black
+colors.black = { code: [4, 5, 6] };
+console.log(colors.black.code[2]);
+
+// example of a array of objects
+var blogPosts = [
+  {
+    title: "weather",
+    content: "it is rainy today",
+    comments: [
+      {
+        name: "john",
+        lastname: "travolta",
+      },
+      {
+        name: "fred",
+        lastname: "seymor",
+      },
+    ],
+  },
+  {
+    title: "weather",
+    content: "Weather sucks today",
+    comments: {
+      name: "steve",
+      lastname: "trest",
+    },
+  },
+];
+
+// print the second element of the array of objects
+console.log(blogPosts[1]);
+console.log(blogPosts[0].comments[1].name);
+
+// Objects quiz:
+/*
+Create a array of objects called a universities, every object needs to have name, hasGone and year properties
+loop over this array and if hasGone value is true then print a statement to the console which includes name and year properties
+if hasGone is false, just print the name property to the console.
+*/
+
+var universities = [
+  {
+    name: "MIT",
+    hasGone: false,
+    year: 1890,
+  },
+  {
+    name: "SAIT",
+    hasGone: true,
+    year: 1910,
+  },
+  {
+    name: "Oxford",
+    hasGone: true,
+    year: 1922,
+  },
+];
+
+universities.forEach(function (university) {
+  if (university.hasGone === true) {
+    console.log(university.name + university.year);
+  } else {
+    console.log(university.name);
+  }
+});
