@@ -529,3 +529,18 @@ numberArray.forEach(function (number) {
 });
 
 // Javascript Objects
+
+// one way of making a object
+var gothKids = new Object();
+gothKids.school;
+
+// this method has a key value pair
+var emoKids = {
+  name: "Timmy",
+  age: 44,
+  school: "SAIT",
+};
+// How to get a certain value from the array
+// cant use . notation if the value has a space in the name
+console.log(emoKids["name"]);
+console.log(emoKids.school);
