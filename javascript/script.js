@@ -652,3 +652,54 @@ universities.forEach(function (university) {
     console.log(university.name);
   }
 });
+
+// Object Methods:
+// Basic example of how to assign a function to a  object and how to call it from outside the object
+var Sheldon = {
+  name: "hello",
+  age: 33,
+  hasGone: true,
+  friends: ["penny ", "raj"],
+  say: function () {
+    console.log("say hi");
+  },
+};
+
+Sheldon.say();
+
+var Leonard = {
+  name: "Leonard",
+  say: function () {
+    console.log("say hi Leonard");
+  },
+};
+
+Leonard.say();
+
+// This Keyword:
+// When it is a ordinary function: The This keyword points to the global object which is window
+// When it is called as a method (in an object): the this keyword points to the object which has this method
+console.log(this);
+
+function addNumber(x, y) {
+  console.log((x = y));
+  console.log(this);
+}
+
+addNumber(10, 20);
+
+// Method is a function because it is a object property
+var test = {
+  testName: "hello",
+  functionTest: function () {
+    console.log(this);
+    console.log("say hi" + test.testName);
+
+    function someFunc() {
+      console.log(this);
+    }
+    someFunc();
+  },
+};
+
+test.sayHi();

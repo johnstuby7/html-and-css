@@ -100,3 +100,5 @@ switch (true) {
     break;
 }
 ```
+
+- NameSpace Collision: if functions have the same name, they will over ride each others data
