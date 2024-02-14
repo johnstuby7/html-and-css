@@ -796,3 +796,24 @@ button.addEventListener("click", function () {
   console.log("You Clicked the button");
   title.style.backgroundColor = "red";
 });
+
+// this example finds the ul, then when  anywhere on the ul is clicked, the background turns blue
+var listParent = document.querySelector("ul");
+listParent.addEventListener("click", function () {
+  console.log("You Clicked the ul");
+  listParent.style.backgroundColor = "blue";
+});
+
+// Quiz SOlution
+// How to get eventListener on the lis in the above example so that each li can be changed individually
+// QuerySelectorAll will return a node list of all the li elements
+var listItems = document.querySelectorAll("li");
+console.log("listItems:", listItems);
+
+// For loop will loop through all listItems until its length is met, for each element of the listItem, it will add a eventListener
+// that will update the color of the li to white
+for (var i = 0; i < listItems.length; i++) {
+  listItems[i].addEventListener("click", function () {
+    this.style.color = "white";
+  });
+}
