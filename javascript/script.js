@@ -689,17 +689,39 @@ function addNumber(x, y) {
 addNumber(10, 20);
 
 // Method is a function because it is a object property
-var test = {
-  testName: "hello",
-  functionTest: function () {
-    console.log(this);
-    console.log("say hi" + test.testName);
+// var test = {
+//   testName: "hello",
+//   functionTest: function () {
+//     console.log(this);
+//     console.log("say hi" + test.testName);
 
-    function someFunc() {
-      console.log(this);
-    }
-    someFunc();
-  },
-};
+//     function someFunc() {
+//       console.log(this);
+//     }
+//     someFunc();
+//   },
+// };
 
-test.sayHi();
+// test.sayHi();
+
+// The DOM: Document Object Method
+// What makes pages interactive: includes menus, forms, scroll effects, interact with the user
+// if you console.ldir(document) in the browser console, it will show you all the info for the document section you selected on the page
+
+// Select and Change Examples:
+// The h1Element will look body document object and look for a h1, if it finds one, it will return that value
+var h1Element = document.querySelector("h1");
+h1Element.style.color = "blue";
+
+var isYellow = false;
+var bodyElement = document.querySelector("body");
+
+setInterval(function () {
+  if (isYellow) {
+    bodyElement.style.background = "white";
+  } else {
+    bodyElement.style.background = "yellow";
+  }
+  // Toggles the isYellow Variable
+  isYellow = !isYellow;
+}, 1000);
