@@ -776,4 +776,12 @@ paragraph.textContent = "Hello John the text is updated";
 // Will give everything as as string including html elements. you are able to add in html elements like strong
 paragraph.innerHTML = "John is the<strong>best</strong>  in the world";
 
-//
+// Attribute manipulation
+// Retrieve the value of the specific a tag, then manipulate as needed
+var myLink = document.querySelector("a");
+console.log(myLink.getAttribute("href"));
+
+// the below will find the a tag and update its value from google to fido
+myLink.setAttribute("href", "https://www.fido.ca");
+console.log(myLink.getAttribute("href"));
+myLink.textContent = "go to Fido";
