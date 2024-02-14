@@ -817,3 +817,13 @@ for (var i = 0; i < listItems.length; i++) {
     this.style.color = "white";
   });
 }
+
+/* ***************************************** CALLBACK FUNCTION *********************************************** */
+
+var testParagraph = document.querySelector("#newId");
+
+function toggleBackground() {
+  testParagraph.classList.toggle("toggleBackground");
+}
+
+testParagraph.addEventListener("click", toggleBackground);
