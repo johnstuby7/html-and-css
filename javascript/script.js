@@ -827,3 +827,37 @@ function toggleBackground() {
 }
 
 testParagraph.addEventListener("click", toggleBackground);
+
+/* ********************************** EVENT TYPES ************************************************************** */
+
+// Mouse over and mouse out evennt listener examples.
+// when you mouse over then move the mouse out of the frame it changes the color back
+var firstTodoItem = document.querySelector(".todoItem");
+firstTodoItem.addEventListener("mouseover", function () {
+  firstTodoItem.style.backgroundColor = "blue";
+  firstTodoItem.style.color = "white";
+});
+
+firstTodoItem.addEventListener("mouseout", function () {
+  firstTodoItem.style.backgroundColor = "white";
+  firstTodoItem.style.color = "black";
+});
+
+// example to apply changes to all instances of todoItem
+var todoListItems = document.querySelectorAll(".todoItem");
+
+for (var i = 0; i < todoListItems.length; i++) {
+  todoListItems[i].addEventListener("mouseover", function () {
+    this.style.backgroundColor = "blue";
+  });
+
+  todoListItems[i].addEventListener("mouseout", function () {
+    this.style.backgroundColor = "white";
+    this.style.color = "black";
+  });
+
+  // This will change the css to the okay style defined in the index.html file, when a li is clicked
+  todoListItems[i].addEventListener("click", function () {
+    this.classList.add("okay");
+  });
+}
