@@ -743,3 +743,23 @@ var selectWithQuery = document.querySelector("h1");
 
 // Returns first match
 var selectWithQueryClass = document.querySelector(".background");
+
+// Manipulation Methods:
+
+// Returns first element that matchs. Updates the css values for the element selected
+var divToManipulate = document.querySelector(".background");
+divToManipulate.style.height = "50px";
+divToManipulate.style.width = "400px";
+divToManipulate.style.backgroundColor = "red";
+divToManipulate.style.fontSize = "30px";
+divToManipulate.style.border = "5px solid black";
+
+// To have the following above done, in index, there is a defined style object, this is referencing that object
+divToManipulate.classList.add("addClass");
+
+// To Remove the applied style from the index
+divToManipulate.classList.remove("addClass");
+
+// Toggle the addClass on or off
+divToManipulate.classList.toggle("addClass");
+divToManipulate.classList.toggle("addClass");
