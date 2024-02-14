@@ -785,3 +785,14 @@ console.log(myLink.getAttribute("href"));
 myLink.setAttribute("href", "https://www.fido.ca");
 console.log(myLink.getAttribute("href"));
 myLink.textContent = "go to Fido";
+
+// Event Handlers: actions to take on the page, clicking on a button, press keys, etc
+// The below example finds the specific button and adds a console message when it is clicked, only happens on button click
+// Have a hash for ids when looking for id with querySelector
+var button = document.querySelector("#btn1");
+var title = document.querySelector("#JohnTitle");
+
+button.addEventListener("click", function () {
+  console.log("You Clicked the button");
+  title.style.backgroundColor = "red";
+});
