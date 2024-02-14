@@ -763,3 +763,17 @@ divToManipulate.classList.remove("addClass");
 // Toggle the addClass on or off
 divToManipulate.classList.toggle("addClass");
 divToManipulate.classList.toggle("addClass");
+
+// To change the content of the element
+var paragraph = document.querySelector("#testId");
+// Will return all the textcontent between the p tags
+console.log(paragraph.textContent);
+
+// updates the text content between the p tags, just remember that the code is not updated, so should be used very irregularly or for
+// special cases. treats the entered purely as text
+paragraph.textContent = "Hello John the text is updated";
+
+// Will give everything as as string including html elements. you are able to add in html elements like strong
+paragraph.innerHTML = "John is the<strong>best</strong>  in the world";
+
+//
