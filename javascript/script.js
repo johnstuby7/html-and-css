@@ -725,3 +725,21 @@ setInterval(function () {
   // Toggles the isYellow Variable
   isYellow = !isYellow;
 }, 1000);
+
+// Select with ID example
+var selectWithId = document.getElementById("testId");
+console.log(selectWithId);
+
+// select with Class, will return all elements with that class name
+var selectWithClass = document.getElementsByClassName("background");
+console.log(selectWithClass);
+
+// Select with tags
+var selectWithTag = document.getElementsByTagName("h1");
+console.log(selectWithTag);
+
+// Select with query, it looks for a specific css selector. will just return one object or first object that matches
+var selectWithQuery = document.querySelector("h1");
+
+// Returns first match
+var selectWithQueryClass = document.querySelector(".background");
