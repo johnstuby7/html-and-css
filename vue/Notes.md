@@ -16,3 +16,9 @@
 ```
 
 - used Vue2 for this course
+
+- For vue, the html needs to be in a template code, while functional logic is located in <script></script>
+- Vue Component: Respresents a set of rules for getting content on the screen and how users can interact with it
+- Vue Instance: an Instance of a vue Component
+
+- You are only allowed one root element, this is why you have a parent div and child divs
