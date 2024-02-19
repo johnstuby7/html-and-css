@@ -78,6 +78,19 @@ function ctrlAddTask() {
   }
 }
 
+function ctrlDeleteTask(event) {
+  var taskID;
+
+  // Find ID
+  taskID = event.target.parentNode.parentNode.parentNode.parentNode.id;
+
+  // Check if there is a ID
+  if (taskID) {
+    // Delete the task from the data structure
+    // Delete the task from the UI
+  }
+}
+
 DOMStrings.addBtn.addEventListener("click", ctrlAddTask);
 
 document.addEventListener("keypress", function (event) {
@@ -85,3 +98,5 @@ document.addEventListener("keypress", function (event) {
     ctrlAddTeask();
   }
 });
+
+DOMStrings.taskContainer.addEventListener("click", ctrlDeleteTask);
