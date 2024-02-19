@@ -33,6 +33,23 @@ function addTask(des) {
   return newTask;
 }
 
+// Delete Task
+function deleteTask(id) {
+  var ids, index;
+
+  // Create a array for ids
+  ids = taskStore.map(function (current) {
+    return current.id;
+  });
+  // Find IDs index
+  index = ids.index(parseInt(id));
+
+  // Delete task
+  if (index !== -1) {
+    taskStore.splice(index, 1);
+  }
+}
+
 // UI Controller
 var DOMStrings = {
   addBtn: document.querySelector(".add__btn"),
@@ -87,6 +104,7 @@ function ctrlDeleteTask(event) {
   // Check if there is a ID
   if (taskID) {
     // Delete the task from the data structure
+    deleteTask(taskID);
     // Delete the task from the UI
   }
 }
