@@ -1,12 +1,14 @@
 <template>
   <ul>
     Videos
+    {{ videosDisplay.valueOf() }}
   </ul>
 </template>
 
 <script>
 export default {
-  name: "VideosDisplay"
+  name: "VideosDisplay",
+  props: ["videosDisplay"],
 }
 </script>
 
