@@ -22,3 +22,10 @@
 - Vue Instance: an Instance of a vue Component
 
 - You are only allowed one root element, this is why you have a parent div and child divs
+
+- Children emit events up the parents
+- Parents provide props down to its children
+
+- input elemente emit events called input events
+- the ? in the api url is for adding in parameters
+- to add multiple parameters to a url, you need to add & between each parameters

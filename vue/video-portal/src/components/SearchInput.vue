@@ -9,11 +9,13 @@ export default {
   name: "SearchInput",
   methods: {
     onChange: function (event) {
-      console.log(event.target.value)
+      const term = event.target.value;
+      // NewTerm is the value of the input field, you can give it any kind of name that you want
+      this.$emit('newTerm', term);
+
     }
   }
 }
-
 </script>
 
 <style></style>
