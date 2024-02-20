@@ -1,6 +1,7 @@
 <template>
   <ul>
-    <ItemDisplay v-for="video in videosDisplay" v-bind:key="video.id">Video</ItemDisplay>
+    <!-- v-bind:video is the prop that is passed to itemDisplay -->
+    <ItemDisplay v-for="video in videosDisplay" v-bind:key="video.id" v-bind:video="video">Video</ItemDisplay>
   </ul>
 </template>
 
