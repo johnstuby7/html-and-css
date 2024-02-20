@@ -1,10 +1,14 @@
 <template>
-  <!-- When a newTerm is entered in the input, the handleNewTerm method is triggered -->
-  <SearchInput @newTerm="handleNewTerm"></SearchInput>
+  <div>
+    <!-- When a newTerm is entered in the input, the handleNewTerm method is triggered -->
+    <SearchInput @newTerm="handleNewTerm"></SearchInput>
+    <VideosDisplay></VideosDisplay>
+  </div>
 </template>
 
 <script>
 import SearchInput from './components/SearchInput.vue';
+import VideosDisplay from './components/VideosDisplay.vue';
 
 // api key for pixabay
 const API_KEY = '42461811-f65e300ab1c8493defc80a8f9';
@@ -12,7 +16,8 @@ const API_KEY = '42461811-f65e300ab1c8493defc80a8f9';
 export default {
   name: 'App',
   components: {
-    SearchInput
+    SearchInput,
+    VideosDisplay,
   },
   methods: {
     //  Async ensures that a promise is returned, something is returned, await only works with async
