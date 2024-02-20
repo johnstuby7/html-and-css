@@ -1,6 +1,6 @@
 <template>
   <!-- When a newTerm is entered in the input, the handleNewTerm method is triggered -->
-  <SearchInput v-on:newTerm="handleNewTerm"></SearchInput>
+  <SearchInput @newTerm="handleNewTerm"></SearchInput>
 </template>
 
 <script>
@@ -16,14 +16,16 @@ export default {
   },
   methods: {
     //  Async ensures that a promise is returned, something is returned, await only works with async
-    handleNewTerm: async function (searchInput) {
-      // the ? allows us to add in parameters to the fetch
-      const response = await fetch('https://pixabay.com/videos/?' + new URLSearchParams({
-        key: API_KEY,
-        q: searchInput
-      }))
-      const data = response.json()
-      console.log(response)
+    async handleNewTerm(searchInput) {
+      const response = await fetch(
+        "https://pixabay.com/api/videos/?" +
+        new URLSearchParams({
+          key: API_KEY,
+          q: searchInput,
+        })
+      );
+      const data = await response.json();
+      console.log(data)
     }
   }
 }

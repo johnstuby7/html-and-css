@@ -1,18 +1,16 @@
 <template>
   <div>
-    <input @input="onChange" type="text">
+    <input @input="onChange" />
   </div>
 </template>
 
 <script>
 export default {
-  name: "SearchInput",
+  name: 'SearchInput',
   methods: {
     onChange: function (event) {
-      const term = event.target.value;
-      // NewTerm is the value of the input field, you can give it any kind of name that you want
-      this.$emit('newTerm', term);
-
+      // const term = event.target.value
+      this.$emit('newTerm', event.target.value)
     }
   }
 }
