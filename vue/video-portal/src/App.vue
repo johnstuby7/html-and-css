@@ -3,6 +3,8 @@
     <!-- When a newTerm is entered in the input, the handleNewTerm method is triggered -->
     <SearchInput @newTerm="handleNewTerm"></SearchInput>
     <VideosDisplay></VideosDisplay>
+    <!-- Below is the array of videos returned by search term -->
+    {{ videosDisplay.valueOf() }}
   </div>
 </template>
 
@@ -19,6 +21,11 @@ export default {
     SearchInput,
     VideosDisplay,
   },
+  data() {
+    return {
+      videosDisplay: [],
+    }
+  },
   methods: {
     //  Async ensures that a promise is returned, something is returned, await only works with async
     async handleNewTerm(searchInput) {
@@ -30,7 +37,8 @@ export default {
         })
       );
       const data = await response.json();
-      console.log(data)
+      // capturing returned data and assigning it to the videosDisplay array
+      this.videosDisplay = data.hits;
     }
   }
 }
