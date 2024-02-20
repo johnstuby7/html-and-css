@@ -1,7 +1,6 @@
 <template>
   <ul>
-    Videos
-    {{ videosDisplay.valueOf() }}
+    <ItemDisplay v-for="video in videosDisplay" v-bind:key="video.id">Video</ItemDisplay>
   </ul>
 </template>
 
